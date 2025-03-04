@@ -1,0 +1,149 @@
+html{
+    overflow: hidden;
+    background-color: #3d3d3d;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: 600;
+    -webkit-text-fill-color: #9b9b9b;
+    text-align: center;
+}
+
+.background{
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #3d3d3d;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.button{
+    border: #0f0f0f solid 8px;
+    border-radius: 8px;
+    background-color: #222222;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+/*тогл-классы для кнопок*/
+.femboy-button-enabled{
+    border-color: #ff23ed;
+}
+
+.mge-button-enabled{
+    border-color: #ff2323;
+}
+
+/*состояния спокойствия и анимация персонажей команд*/
+.mge-accept{
+    position: fixed;
+    bottom: 0;
+    left: 100%;
+}
+
+.mge-transition{
+    left: 0%;
+    transition: left 0.5s ease-out;
+}
+
+.femboy-accept{
+    position: fixed;
+    bottom: 0;
+    right: 100%;
+}
+
+.femboy-transition{
+    right: 0%;
+    transition: right 0.5s ease-out;
+}
+
+    /*для анимации бг*/
+@keyframes gradient-mge{
+    0%{
+        background-color: #3d3d3d;
+    }
+    100%{
+        background-color: #4b2929;
+    }
+}
+
+@keyframes gradient-femboy{
+    0%{
+        background-color: #3d3d3d;
+    }
+    100%{
+        background-color: #492f44;
+    }
+}
+
+@keyframes gradient-mge-femboy{
+    0%{
+        background-color: #4b2929;
+    }
+    100%{
+        background-color: #492f44;
+    }
+}
+
+@keyframes gradient-femboy-mge{
+    0%{
+        background-color: #492f44;
+    }
+    100%{
+        background-color: #4b2929;
+    }
+}
+.animated-mge{
+    animation-name: gradient-mge;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.animated-femboy{
+    animation-name: gradient-femboy;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.animated-femboy-mge{
+    animation-name: gradient-femboy-mge;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.animated-mge-femboy{
+    animation-name: gradient-mge-femboy;
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+
+/* что то странное
+@keyframes gradient{
+    0%{
+        background: #3d3d3d;
+    }
+    100%{
+        background: linear-gradient(180deg, rgba(61,61,61,1) 0%, rgba(113,113,113,1) 50%, rgba(255,35,35,1) 100%);
+    }
+}
+
+.animated{
+    animation-name: gradient;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+*/

@@ -1,0 +1,47 @@
+html{
+    overflow: hidden;
+    background-color: #207c88;
+    user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    -webkit-text-fill-color: #185a63;
+}
+
+.player-stats{
+    list-style-type: none;
+}
+
+button{
+    background-color: #51f889;
+    border: #ccf851 solid 5px;
+    font-size: 20px;
+}
+
+button:active{
+    border-color: #adec00;
+    -webkit-text-fill-color: #00c441;
+}
+
+/*стили кнопок*/
+.reset-button{
+    width: 200px;
+    height: auto;
+}
+
+.play-button{
+    width: 150px;
+    height: 80px;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+}
