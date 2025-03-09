@@ -4,31 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/menu.css">
-    <script src="scripts/functions.js"></script>
-    <script src="scripts/menu.js"></script>
+    <script src="scripts/menu_quiting.js"></script>
+    <script src="scripts/functions.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
     <title>Добро пожаловать, сосунок!</title>
 </head>
 <body>
 
-    <h1 class="team-desc" data-c0="Фембоя" data-c1="МГЕ Брата">Вы играете за:</h1>
+    <h1 class="team-desc" data-c0="Фембой" data-c1="МГЕ Брат">Вы </h1>
 
-    <h1>Ваши характеристики:</h1>
-    <ul class="player-stats">
-        <li class="money-container">Монеты: 0</li>
-        <li>Урон: 10</li>
-        <li>Защита: 0</li>
-        <li>Скорость атаки: 1</li>
-        <li>Уровень сложности: 1</li>
-    </ul>
-
-    <img class="inventory" src="" alt="инвентарь">
-    <img class="shop" src="" alt="магазин">
+    <div class="main-container">
+        <img class="stats" src="assets/icons/stats.png" alt="характеристики" width="64" height="64">
+        <img class="inventory" src="assets/icons/inventory.png" alt="инвентарь" width="64" height="64">
+        <img class="shop" src="assets/icons/shop.png" alt="магазин" width="64" height="64">
+    </div>
 
     <div class="button-container">
         <button class="reset-button" type="button">Выбрать другую команду</button>
         <button class="play-button" type="button">Начать игру</button>
     </div>
 
-    <footer>Версия 1.0</footer>
+    <!--общий оверлей-->
+    <div class="overlay delete">
+
+        <!--для статистики-->
+        <div class="stats-container">
+            <h2 class="money-container">Монеты: 0</h2>
+            <h1>Ваши характеристики:</h1>
+            <ul class="player-stats">
+                <li class="damage-container">Урон: 10</li>
+                <li class="armor-container">Защита: 0</li>
+                <li class="attack_speed-container">Скорость атаки: 1</li>
+            </ul>
+            <h2 class="difficulty-container">Уровень сложности: 1</h2>
+            <p class="tip">* Нажмите на харатеристику, чтобы улучшить её. (10 монет - 1 прокачка)</p>
+        </div>
+
+        <!--для инвентаря-->
+        <div class="inventory-container">
+            <h1>Пока ничего нет</h1>
+        </div>
+
+        <!--для магазина-->
+        <div class="shop-container">
+            <h1>Пока ничего нет</h1>
+        </div>
+
+    </div>
+    <div class="close delete"></div>
+
 </body>
+<footer>Версия 1.1</footer>
 </html>

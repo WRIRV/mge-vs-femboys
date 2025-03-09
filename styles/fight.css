@@ -1,0 +1,73 @@
+html{
+    background-color: #3f3f3f;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+
+    animation-name: background-gradient;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    color: #04ff9f;
+}
+
+/*анимированный фон*/
+@keyframes background-gradient{
+    0%{
+        background-color: #3f3f3f;
+    }
+    25%{
+        background-color: #5f522e;
+    }
+    50%{
+        background-color: #2e6134;
+    }
+    75%{
+        background-color: #375664;
+    }
+    100%{
+        background-color: #3f3f3f;
+    }
+}
+
+/*анимация удара*/
+.attacked{
+    animation-name: attacked;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes attacked{
+    10%{
+        transform: translateX(-10px);
+    }
+    20%{
+        transform: translateX(10px);
+    }
+    30%{
+        transform: translateX(-10px);
+    }
+    40%{
+        transform: translateX(10px);
+    }
+    50%{
+        transform: translateX(-10px);
+    }
+    60%{
+        transform: translateX(10px);
+    }
+    70%{
+        transform: translateX(-10px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    90%{
+        transform: translateX(-10px);
+    }
+}
